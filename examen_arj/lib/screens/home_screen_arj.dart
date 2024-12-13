@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:examen_arj/routes/app_routes_arj.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,18 +14,13 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Aquí se agrega el widget FlutterLogo
             const FlutterLogo(size: 100),
-            
-            // Botón para iniciar sesión
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, 'signin_screen_arj');
+                Navigator.pushNamed(context, 'signin_screen');
               },
               child: const Text('Sign in'),
             ),
-            
-            // Botón para registrarse
             ElevatedButton(
               onPressed: null,
               style: ElevatedButton.styleFrom(
